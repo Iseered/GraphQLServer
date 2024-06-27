@@ -8,9 +8,11 @@
     "dev": "nodemon src/index.js",
     "heroku-postbuild": "npm install --only=dev && npm install && npm run build"
   },
-  "keywords": ["graphql",
+  "keywords": [
+    "graphql",
     "express",
-    "apollo-server"],
+    "apollo-server"
+  ],
   "author": "Brian",
   "license": "ISC",
   "dependencies": {
@@ -23,12 +25,11 @@
     "mongoose": "^8.4.1",
     "express-graphql": "^0.12.0",
     "@graphql-tools/schema": "^8.2.0"
-
   },
   "devDependencies": {
     "nodemon": "^3.1.2"
   },
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   }
 }
