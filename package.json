@@ -11,7 +11,7 @@
   "keywords": ["graphql",
     "express",
     "apollo-server"],
-  "author": "",
+  "author": "Brian",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.13.0",
