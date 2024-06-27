@@ -4,9 +4,9 @@
   "description": "Backend server for a GraphQL API",
   "main": "src/index.js",
   "scripts": {
-    "start": "yarn && node src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "heroku-postbuild": "yarn && yarn build"
+    "heroku-postbuild": "npm install --only=dev && npm install && npm run build"
   },
   "keywords": [
     "graphql",
@@ -16,18 +16,19 @@
   "author": "Brian",
   "license": "ISC",
   "dependencies": {
+    "@graphql-tools/schema": "^8.2.0",
     "apollo-server-express": "^3.13.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "graphql": "^16.8.1",
-    "graphql-type-json": "^0.3.2",
-    "mongoose": "^8.4.1",
     "express-graphql": "^0.12.0",
-    "@graphql-tools/schema": "^8.2.0"
+    "graphql": "^15.5.0",
+    "graphql-type-json": "^0.3.2",
+    "mongoose": "^8.4.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.2"
+    "nodemon": "^3.1.2",
+    "vercel": "^34.2.8"
   },
   "engines": {
     "node": "20.x"
