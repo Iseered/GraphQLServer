@@ -15,7 +15,7 @@ const typeDefs = gql`
     unMember: Boolean!
     currencies: JSON
     idd: Idd
-    capital: [String]!
+    capital: [String]
     altSpellings: [String]!
     region: String!
     subregion: String!

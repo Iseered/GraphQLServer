@@ -16,12 +16,7 @@ const typeDefs = gql`
   }
 `;
 
-// Datos simulados
-const countries = [
-  { code: 'US', name: 'United States', capital: 'Washington D.C.', population: 331002651 },
-  { code: 'CA', name: 'Canada', capital: 'Ottawa', population: 37742154 },
-  { code: 'GB', name: 'United Kingdom', capital: 'London', population: 67886011 },
-];
+
 
 // Resolvers para manejar las queries
 const resolvers = {

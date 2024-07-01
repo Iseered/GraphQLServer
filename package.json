@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "heroku-postbuild": "npm install --only=dev && npm install && npm run build"
+    "build": "echo 'No build step required'"
   },
   "keywords": [
     "graphql",
